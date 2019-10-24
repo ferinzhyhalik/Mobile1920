@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.github.ferinzhyhalik.hanselgretel.MainMenu">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="656dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/header_one_style"
+            android:layout_width="wrap_content"
+            android:layout_height="178dp"
+            android:layout_gravity="center"
+            android:fontFamily="roboto"
+            android:gravity="center_vertical"
+            android:text="@string/game_title"
+            android:textSize="42sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/start_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/start_button" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/hansel_and_gretel"/>
+
+    </LinearLayout>
+
+</layout>

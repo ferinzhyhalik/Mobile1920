@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/mainMenu">
+    <fragment
+        android:id="@+id/mainMenu"
+        android:name="com.github.sutedjathehoping.forestapple.MainMenu"
+        android:label="Main Menu"
+        tools:layout="@layout/fragment_main_menu" >
+        <action
+            android:id="@+id/action_mainMenu_to_howToPlay"
+            app:destination="@id/howToPlay" />
+        <action
+            android:id="@+id/action_mainMenu_to_gameFragment"
+            app:destination="@id/gameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/howToPlay"
+        android:name="com.github.sutedjathehoping.forestapple.HowToPlay"
+        android:label="How To Play"
+        tools:layout="@layout/fragment_how_to_play" />
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.github.sutedjathehoping.forestapple.GameFragment"
+        android:label="The Legendary Apple Tree"
+        tools:layout="@layout/fragment_game" />
+</navigation>
